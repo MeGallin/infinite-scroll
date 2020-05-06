@@ -2,13 +2,13 @@ const postsContainer = document.getElementById('post-container');
 const loading = document.querySelector('.loader');
 const filter = document.getElementById('filter');
 
-let limit = 12;
+let limit = 5;
 let page = 1;
 
 // Fetch from API
 let getPosts = async () => {
   const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
+    `http://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
     { mode: 'cors' }
   );
   const data = await response.json();
