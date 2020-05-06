@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>My Blog</h1>
+    <div class="filter-container">
+      <input
+        type="text"
+        class="filter"
+        id="filter"
+        placeholder="filter posts"
+      />
+    </div>
+    <div id="post-container">
+      <div class="post">
+        <div class="number">1</div>
+        <div class="post-info">
+          <h2 class="post-title">post 1</h2>
+          <p class="post-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            provident quod enim quasi a ipsa ratione! Inventore labore autem
+            aliquid?
+          </p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="number">2</div>
+        <div class="post-info">
+          <h2 class="post-title">post 2</h2>
+          <p class="post-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            provident quod enim quasi a ipsa ratione! Inventore labore autem
+            aliquid?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <footer>
+      <div>
+        Site DEVELOPED by
+        <a href="https://garyallin.uk" target="_blank">Gary Allin</a>.
+      </div>
+      <div>
+        Site HOSTED by
+        <a href="https://trilogywebsolutions.co.uk" target="_blank"
+          >Trilogy Web Solutions</a
+        >.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
